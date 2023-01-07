@@ -14,11 +14,11 @@ const forecast = (lat,lon, callback) => {
         } else callback(undefined, {
             'currentTemp': response.body.current.temperature
         })
-        var currentTemp = response.body.current.temperature;
+        let currentTemp = response.body.current.temperature;
+        
         console.log("temp:" + currentTemp);
     })
     
 }
-
 
   module.exports = forecast;
