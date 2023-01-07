@@ -43,7 +43,7 @@ weatherForm.addEventListener('submit', (e) => {
                 document.getElementById("weather_logo").src = '/img/overcast.png';
              } else if (data.current.weather_descriptions[0] == "Overcast"){
                 document.getElementById("weather_logo").src = '/img/cloudy.png';
-             } else if (data.current.weather_descriptions[0] == "Sunny"){
+             } else if (data.current.weather_descriptions[0] == "Sunny" || data.current.weather_descriptions[0] == "Clear"){
                 document.getElementById("weather_logo").src = '/img/sun.png';
              } else if (data.current.weather_descriptions[0] == "Mist"){
                 document.getElementById("weather_logo").src = '/img/mist.png';
